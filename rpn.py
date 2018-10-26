@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+import operator
+
+
+op = {
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
+    '/': operator.floordiv
+}
 
 
 def calculate(arg):
@@ -11,23 +20,13 @@ def calculate(arg):
         try:
             value = int(token)
             stack.append(value)
+            
         except ValueError:
             val2 = stack.pop()
             val1 = stack.pop()
-            result = val1 + val2
 
-            if (token == '+'):
-                result = val1 + val2
-
-            elif (token == '-'):
-                result = val1 - val2
-
-            elif (token == '*'):
-                result = val1 * val2;
-
-            elif (token == '/'):
-                result = val1 / val2
-
+            func = op[token]
+            result = func(val1, val2)
 
             stack.append(result);
             return stack[0]
