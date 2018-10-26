@@ -12,15 +12,15 @@ op = {
 
 def calculate(arg):
 
-    stack = []
+    stack = arg.split()
 
-    tokens = arg.split()
+    while (len(stack) > 1):
+        token = stack.pop();
 
-    for token in tokens:
         try:
             value = int(token)
             stack.append(value)
-            
+
         except ValueError:
             val2 = stack.pop()
             val1 = stack.pop()
