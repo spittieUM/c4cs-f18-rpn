@@ -20,7 +20,7 @@ def calculate(arg):
                 result = val1 + val2
 
             elif (token == '-'):
-                result = val1 - val2
+                result = val2 - val1
 
 
             stack.append(result);
