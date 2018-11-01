@@ -23,3 +23,8 @@ class TestBasics(unittest.TestCase):
     def test_div(self):
         result = rpn.calculate('4 2 /')
         self.assertEqual(2, result)
+
+
+    def test_pow(self):
+        result = rpn.calculate('3 2 ^')
+        self.assertEqual(9, result)
