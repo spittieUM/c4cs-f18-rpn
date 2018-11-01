@@ -6,7 +6,8 @@ op = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
-    '/': operator.floordiv
+    '/': operator.floordiv,
+    '^': operator.pow
 }
 
 
@@ -38,5 +39,5 @@ def main():
         calculate(input("rpn calc> "))
 
 
-if __name__ == '__main__': # Note: that's "underscore underscore n a m e ..."
+if __name__ == '__main__':
     main()
