@@ -7,6 +7,5 @@ install:
 
 script: 
   - coverage run -m unittest
-
-after-success:
   - coverage report
+  
