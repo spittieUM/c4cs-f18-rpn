@@ -16,7 +16,7 @@ def calculate(arg):
     stack = arg.split()
 
     while (len(stack) > 1):
-        token = stack.pop();
+        token = stack.pop()
 
         try:
             value = int(token)
@@ -35,8 +35,10 @@ def calculate(arg):
 
 
 def main():
-    while True:
-        calculate(input("rpn calc> "))
+    calcFunc = ''
+    while calcFunc != 'q':
+        calcFunc = input("rpn calc> ")
+        calculate(calcFunc)
 
 
 if __name__ == '__main__':
