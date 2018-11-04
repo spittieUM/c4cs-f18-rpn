@@ -10,7 +10,6 @@ install:
 
 script: 
   - coverage run -m unittest
-  - coverage report
   
 after_success:
   - codecov --file coverage/lcov.info --disable search
