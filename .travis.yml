@@ -2,6 +2,9 @@ language: python
 python:
   - "3.6"
 
+before_install:
+  - pip install --user codecov
+
 install:
    - pip install coveralls
 
@@ -9,3 +12,5 @@ script:
   - coverage run -m unittest
   - coverage report
   
+after_success:
+  - codecov --file coverage/lcov.info --disable search
