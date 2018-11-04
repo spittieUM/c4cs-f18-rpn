@@ -13,3 +13,4 @@ script:
   
 after_success:
   - codecov --file coverage/lcov.info --disable search
+  - coveralls
