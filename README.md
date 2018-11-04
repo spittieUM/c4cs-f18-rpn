@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME})
+[![Build Status](https://travis-ci.org/spittieUM/c4cs-f18-rpn.png?branch=master)](https://travis-ci.org/spittieUM/c4cs-f18-rpn)
