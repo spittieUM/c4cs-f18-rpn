@@ -12,7 +12,7 @@ class TestBasics(unittest.TestCase):
 
     def test_sub(self):
         result = rpn.calculate('4 3 -')
-       self.assertEqual(1, result)
+        self.assertEqual(1, result)
 
 
     def test_mul(self):
