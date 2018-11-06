@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RPN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <script src="/static/jquery-1.11.3.min.js"></script>
+  <script src="/static/bootstrap.min.js"></script>
+  <script src="/static/angular.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>RPN Calculator</h2>
+  <div class="jumbotron">
+
+  <form method="Post" action="/">
+    <div class="form-group">
+     <div class="row">
+      <div class="col-sm-4">
+        <label for="pwd">Enter Equation:</label>
+        <input type="text" class="form-control" name="eq">
+      </div>
+     </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <h4> {{ val }} </h4>
+      </div>
+    </div>
+
+  </form>
+  </div>
+</div>
+
+
+</body>
+</html>
